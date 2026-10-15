@@ -61,9 +61,8 @@
   }
   .avatar {
     width: 160px; height: 160px; border-radius: 50%;
-    background: var(--accent); color: #fff;
-    display: grid; place-items: center;
-    font-family: "Source Serif 4", serif; font-size: 52px; font-weight: 600; letter-spacing: 1px;
+    object-fit: cover; object-position: 32% center;
+    border: 3px solid var(--line);
   }
   h1 { font-family: "Source Serif 4", serif; font-weight: 600; font-size: 40px; line-height: 1.15; margin: 0 0 10px; }
   .role { font-size: 18px; margin: 0 0 4px; }
@@ -108,7 +107,7 @@
   @media (max-width: 640px) {
     body { font-size: 16px; }
     header.hero { grid-template-columns: 1fr; text-align: center; padding: 40px 0 36px; gap: 20px; }
-    .avatar { margin: 0 auto; width: 120px; height: 120px; font-size: 40px; }
+    .avatar { margin: 0 auto; width: 140px; height: 140px; }
     h1 { font-size: 32px; }
     .nav-inner { justify-content: center; }
     .contact-card dl { grid-template-columns: 1fr; gap: 2px; }
@@ -133,7 +132,7 @@
 
 <main id="top">
   <header class="hero">
-    <div class="avatar" aria-hidden="true">JVJ</div>
+    <img class="avatar" src="images/headshot.jpg" alt="Headshot of Jlateh Vincent Jappah" width="160" height="160">
     <div>
       <h1>Jlateh Vincent Jappah, M.D.</h1>
       <p class="role">Ph.D. Candidate in Health Policy (Health Economics)</p>
