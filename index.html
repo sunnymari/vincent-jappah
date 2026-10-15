@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jlateh Vincent Jappah</title>
+<meta name="description" content="Jlateh Vincent Jappah — PhD Candidate in Health Policy (Health Economics), Stanford University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --text: #1f1f1f;
+    --muted: #5c5c5c;
+    --accent: #8c1515;
+    --line: #e4e1dc;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141414;
+      --text: #ececec;
+      --muted: #a6a6a6;
+      --accent: #e0706f;
+      --line: #2c2c2c;
+      --card: #1b1b1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Inter", system-ui, sans-serif;
+    line-height: 1.65;
+    font-size: 17px;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    max-width: 880px; margin: 0 auto; padding: 14px 20px;
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .nav-name { font-family: "Source Serif 4", serif; font-weight: 600; font-size: 18px; color: var(--text); }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; font-size: 15px; }
+  .nav-links a { color: var(--muted); }
+  .nav-links a:hover { color: var(--accent); text-decoration: none; }
+
+  main { max-width: 880px; margin: 0 auto; padding: 0 20px 80px; }
+
+  header.hero {
+    display: grid; grid-template-columns: 160px 1fr; gap: 36px; align-items: center;
+    padding: 64px 0 48px; border-bottom: 1px solid var(--line);
+  }
+  .avatar {
+    width: 160px; height: 160px; border-radius: 50%;
+    background: var(--accent); color: #fff;
+    display: grid; place-items: center;
+    font-family: "Source Serif 4", serif; font-size: 52px; font-weight: 600; letter-spacing: 1px;
+  }
+  h1 { font-family: "Source Serif 4", serif; font-weight: 600; font-size: 40px; line-height: 1.15; margin: 0 0 10px; }
+  .role { font-size: 18px; margin: 0 0 4px; }
+  .affil { color: var(--muted); margin: 0 0 18px; }
+  .btn {
+    display: inline-block; padding: 9px 18px; border: 1px solid var(--accent);
+    border-radius: 6px; font-weight: 500; font-size: 15px;
+  }
+  .btn:hover { background: var(--accent); color: #fff; text-decoration: none; }
+
+  section { padding: 48px 0 8px; scroll-margin-top: 60px; }
+  h2 {
+    font-family: "Source Serif 4", serif; font-weight: 600; font-size: 26px;
+    margin: 0 0 20px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); display: inline-block;
+  }
+  p { margin: 0 0 16px; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
+  .tags li {
+    font-size: 14px; padding: 4px 12px; border: 1px solid var(--line);
+    border-radius: 999px; background: var(--card); color: var(--muted);
+  }
+
+  .list { list-style: none; margin: 0; padding: 0; }
+  .list li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .list li:last-child { border-bottom: 0; }
+  .list .title { font-weight: 600; }
+  .list .sub { color: var(--muted); font-size: 15px; }
+
+  .contact-card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 24px;
+  }
+  .contact-card dl { margin: 0; display: grid; grid-template-columns: 130px 1fr; gap: 10px 16px; }
+  .contact-card dt { color: var(--muted); font-size: 15px; }
+  .contact-card dd { margin: 0; }
+
+  footer {
+    max-width: 880px; margin: 0 auto; padding: 24px 20px 40px;
+    border-top: 1px solid var(--line); color: var(--muted); font-size: 14px;
+  }
+
+  @media (max-width: 640px) {
+    body { font-size: 16px; }
+    header.hero { grid-template-columns: 1fr; text-align: center; padding: 40px 0 36px; gap: 20px; }
+    .avatar { margin: 0 auto; width: 120px; height: 120px; font-size: 40px; }
+    h1 { font-size: 32px; }
+    .nav-inner { justify-content: center; }
+    .contact-card dl { grid-template-columns: 1fr; gap: 2px; }
+    .contact-card dd { margin-bottom: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="#top">J. Vincent Jappah</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#honors">Honors</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="avatar" aria-hidden="true">JVJ</div>
+    <div>
+      <h1>Jlateh Vincent Jappah, M.D.</h1>
+      <p class="role">Ph.D. Candidate in Health Policy (Health Economics)</p>
+      <p class="affil">Stanford University · M.A. Student in Economics</p>
+      <a class="btn" href="mailto:jvjappah@stanford.edu">jvjappah@stanford.edu</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Jlateh Vincent Jappah is a PhD Candidate in Health Policy (Health Economics) at Stanford University, admitted in Autumn 2021, and a Master of Arts student in Economics, admitted in Spring 2024.</p>
+    <p>In addition to the United States, he has lived and worked in several countries in Africa, Asia, and Europe. He is bilingual in English and Russian.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>His research sits at the intersection of methods that enhance access to the social determinants of health and the provision of appropriate and timely healthcare services. The aim is to reduce avoidable morbidity and mortality and improve overall health and well-being, especially for underserved and vulnerable populations.</p>
+    <p>Jappah contends that although health insurance and access to healthcare services are important elements in the health production function, other structural and socio-economic factors collude to either foster or erode health. He is curious about the socio-political and institutional forces that shape health and well-being, and is also interested in machine learning and artificial intelligence in healthcare.</p>
+    <ul class="tags">
+      <li>Health Economics</li>
+      <li>Public Policy</li>
+      <li>Social Determinants of Health</li>
+      <li>Global Public Health</li>
+      <li>Maternal &amp; Child Health</li>
+      <li>Medicine</li>
+      <li>AI &amp; Machine Learning in Healthcare</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="list">
+      <li><div class="title">Ph.D. Candidate, Health Policy (Health Economics)</div><div class="sub">Stanford University</div></li>
+      <li><div class="title">M.A., Economics</div><div class="sub">Stanford University</div></li>
+      <li><div class="title">M.S., Health Policy and Economics</div><div class="sub">Cornell University</div></li>
+      <li><div class="title">M.Sc., Global Health and Development</div><div class="sub">University College London</div></li>
+      <li><div class="title">M.P.H., Public Health</div><div class="sub">New York University</div></li>
+      <li><div class="title">M.D., Medicine</div><div class="sub">People's Friendship University of Russia (RUDN University), Moscow</div></li>
+    </ul>
+  </section>
+
+  <section id="honors">
+    <h2>Selected Honors &amp; Awards</h2>
+    <ul class="list">
+      <li><div class="title">George P. Shultz Dissertation Fund Award</div><div class="sub">Stanford Institute for Economic Policy Research (SIEPR)</div></li>
+      <li><div class="title">Professor Alvin Roth Research Grant</div><div class="sub">Stanford University</div></li>
+      <li><div class="title">Emerging Scholars Fellowship</div><div class="sub">Stanford Impact Labs, Stanford University</div></li>
+      <li><div class="title">Center for African Studies Graduate Research Fellowship</div><div class="sub">Stanford University</div></li>
+      <li><div class="title">Community Impact Award</div><div class="sub">Stanford Alumni Association, Stanford University</div></li>
+    </ul>
+    <p class="sub" style="margin-top:16px;color:var(--muted);font-size:15px;">
+      Full list of 23 honors on his <a href="https://profiles.stanford.edu/jlateh-vincent-jappah" target="_blank" rel="noopener">Stanford Profile</a>.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:jvjappah@stanford.edu">jvjappah@stanford.edu</a></dd>
+        <dt>Departments</dt>
+        <dd>Health Policy · Economics</dd>
+        <dt>Institution</dt>
+        <dd>Stanford University</dd>
+        <dt>Profile</dt>
+        <dd><a href="https://profiles.stanford.edu/jlateh-vincent-jappah" target="_blank" rel="noopener">profiles.stanford.edu</a></dd>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © <span id="yr"></span> Jlateh Vincent Jappah · Stanford University
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
