@@ -62,24 +62,6 @@
     border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
   }
 
-  /* Profile + research fields band */
-  .band {
-    display: grid; grid-template-columns: 220px 1fr; gap: 40px; align-items: start;
-    padding: 22px 0 22px;
-  }
-  .boxbtn {
-    display: inline-block; padding: 6px 4px;
-    background: #ececec; border: 1px solid var(--rule);
-    outline: 1px solid var(--rule); outline-offset: 2px;
-    color: var(--accent); font-weight: 700; font-size: 20px; text-decoration: underline;
-  }
-  .fields h3 { margin: 0 0 8px; color: var(--accent); font-size: 15px; font-weight: 700; }
-  .fields ul {
-    margin: 0; padding-left: 26px;
-    columns: 2; column-gap: 32px; font-size: 15.5px;
-  }
-  .fields li { break-inside: avoid; padding: 1px 0; }
-
   /* Sections */
   section { padding: 22px 0 34px; scroll-margin-top: 10px; }
   section h2 {
@@ -102,8 +84,6 @@
     .hero .photo-col { order: -1; max-width: 240px; }
     .hero h1 { font-size: 28px; }
     .hero .title { font-size: 22px; }
-    .band { grid-template-columns: 1fr; gap: 18px; }
-    .fields ul { columns: 1; }
   }
 </style>
 </head>
@@ -129,27 +109,6 @@
       <img class="photo" src="images/headshot.jpg" alt="Headshot of Jlateh Vincent Jappah">
     </div>
   </header>
-</div>
-
-<div class="wrap"><hr class="double-rule"></div>
-
-<div class="wrap">
-  <div class="band">
-    <div>
-      <a class="boxbtn" href="https://profiles.stanford.edu/jlateh-vincent-jappah" target="_blank" rel="noopener">Stanford Profile</a>
-    </div>
-    <div class="fields">
-      <h3>Research Fields:</h3>
-      <ul>
-        <li>Health Economics</li>
-        <li>Public Policy</li>
-        <li>Social Determinants of Health</li>
-        <li>Global Public Health</li>
-        <li>Maternal &amp; Child Health</li>
-        <li>AI &amp; Machine Learning in Healthcare</li>
-      </ul>
-    </div>
-  </div>
 </div>
 
 <div class="wrap"><hr class="double-rule"></div>
